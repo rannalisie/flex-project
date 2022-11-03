@@ -1,0 +1,320 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "open sans", sans-serif;
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul li a{
+    text-decoration: none;
+}
+
+div img{
+    display: block;
+    width: 100%;
+}
+
+.flex-container{
+    display: flex;
+    max-width: 992px;
+    margin: auto;
+    width: 100%;
+    min-width: 320px;
+}
+
+header{
+    background: linear-gradient(135deg, rgb(255, 163, 187),rgb(140, 213, 246));
+    height: 100px;
+    display: flex;
+    align-items: center;
+    color: white;
+    pointer-events: none;
+}
+
+header .list-items{
+    display: flex;
+    justify-content: space-between;
+    max-width: 360px;
+    width: 100%;
+    margin-top: 50px;
+}
+
+header .nome{
+    margin-top: 35px;
+}
+
+.icon{
+    max-width: 100px;
+    width: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    display: block;
+}
+
+.ban{
+    max-width: 100%;
+    width: 100%;
+    display: block;
+}
+
+.list-items li a{
+   color: white;
+   display: flex;
+   justify-content: space-between;
+
+}
+
+header .menu{
+    display: flex;
+    justify-content: space-between;
+}
+
+.apresentacao{
+    height: 100vh;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.gg{
+    display: block;
+    width: 500px;
+}
+
+ .apresentacao .texto-a{
+    min-height: 200px;
+}
+
+.texto-a h1{
+    color: rgb(140, 213, 246);
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.btn{
+    color: white;
+    background-color: rgb(251, 186, 206);
+    text-align: center;
+    border-radius: 30px;
+    width: 220px;
+    display: block;
+    text-decoration: none;
+    height: 50px;
+    line-height: 50px;
+    margin-bottom: 10px;
+    margin: 10px;
+
+}
+
+#quem-somos{
+   flex-direction: row-reverse;
+}
+
+#quem-somos h2{
+    color: rgb(140, 213, 246);
+    font-size: 48px;
+    display: flex;
+    margin-bottom: 20px;
+
+}
+
+#quem-somos h2::before{
+    content: "";
+    height: 50px;
+    width: 5px;
+    margin-right: 5px;
+    background-color: rgb(140, 213, 246);
+    position: relative;
+}
+
+#quem-somos p{
+    margin-bottom: 10px;
+    width: 90%;
+}
+
+#quem-somos img{
+    min-width: 320px;
+}
+
+.container-externo{
+    background: linear-gradient(135deg, rgb(255, 163, 187),rgb(140, 213, 246));
+    width: 100%;
+}
+
+#merch{
+    flex-direction: column;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+#merch h2{
+    color:  rgb(140, 213, 246);
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.list-merch{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin-top: 80px;
+    margin-right: 190px;
+}
+
+.list-merch .item-merch{
+    text-align: center;
+}
+
+.item-merch a{  
+    width: 220px;
+    background-color: rgb(255, 163, 187);
+    border-radius: 30px;
+    height: 50px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    line-height: 50px;
+    padding: 5px 10px;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.item-merch p{  
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.item-merch img{  
+    margin: auto;
+}
+
+#pacotes{
+    flex-direction: column;
+    min-height: 100vh;
+    padding-top: 50px;
+}
+
+#pacotes h2{
+    color:rgb(140, 213, 246);
+    font-size: 48px;
+    margin-top: 30px;
+}
+
+.list-pacotes{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.item-pacotes{
+    flex: 1;
+    border: 5px solid rgb(255, 163, 187);
+    margin-right: 20px;
+    padding: 10px;
+    max-width: 240px;
+}
+
+.item-pacotes .btn{
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.item-pacotes h3{
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+    color:rgb(255, 163, 187);
+    text-align: center;
+    margin-top: 20px;
+}
+
+.item-pacotes h3::after{
+    content: "";
+    background-color: rgb(255, 163, 187);
+    width: 100%;
+    height: 3px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.item-pacotes ul{
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.item-pacotes ul li{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.item-pacotes ul li::before{
+    content: "";
+    background-color: rgb(255, 163, 187);
+    width: 10px;
+    height: 10px;
+    margin-right: 5px;
+}
+
+footer{
+    background: linear-gradient(135deg, rgb(140, 213, 246),rgb(255, 163, 187));
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+
+footer .footer{
+    justify-content: space-between;
+    color: white;
+}
+
+/* mobile */
+
+@media(max-width: 992px){
+    .flex-container{
+        flex-direction: column;
+    }
+    .apresentacao{
+        flex-direction: column-reverse;
+    }
+    .apresentacao .texto-a{
+        width: 100%;
+    }
+    #quem-somos{
+        flex-direction: column-reverse;
+    }
+    #quem-somos img{
+        min-width: 320px;
+        margin: auto;
+    }
+    .list-merch{
+        flex-direction: column;
+    }
+    .item-merch{
+        width: 50%;
+        margin: auto;
+    }
+    .list-pacotes{
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 20px;
+    }
+    .list-pacotes .item-pacotes{
+        max-width: 90%;
+        margin: auto;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
